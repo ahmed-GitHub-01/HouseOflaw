@@ -1,0 +1,16 @@
+<form #FormRegister="ngForm" (ngSubmit)="register()" class="form-group">
+  <h4>تسجيل مستخدم جديد</h4>
+    <input type="number" name="code" class="form-control" placeholder="Code" required="required" [(ngModel)]="model.Code">
+    <input type="text" name="UserName" class="form-control" placeholder="UserName" required="required"[(ngModel)]="model.UserName">
+    <input type="email" name="Email" class="form-control" placeholder="Email" required="required" [(ngModel)]="model.Email">
+    <input type="password" name="Password" class="form-control" placeholder="Password" required="required" [(ngModel)]="model.Password" autocomplete="new-password">
+    <input type="text" name="Name_Ar" class="form-control" placeholder="Name_Ar" required="required" [(ngModel)]="model.Name_Ar">
+    <input type="date" name="DateEntry" class="form-control" placeholder="DateEntry" required="required" [(ngModel)]="model.DateEntry">
+    <input type="text" name="Department" class="form-control" placeholder="Department" required="required" [(ngModel)]="model.Department">
+    <input type="number" name="IsVoke" class="form-control" placeholder="IsVoke" required="required" [(ngModel)]="model.IsVoke">
+    <input type="number" name="Switch" class="form-control" placeholder="Switch" required="required" [(ngModel)]="model.Switch">
+    <input type="text" name="Response" class="form-control" placeholder="Response" required="required" [(ngModel)]="model.Response">
+    <input type="number" name="Acc_Code" class="form-control" placeholder="Acc_Code" required="required" [(ngModel)]="model.Acc_Code">
+    <input type="submit" value="Register" class="btn btn-success mr-2" [disabled]="!FormRegister.valid">
+    <input type="submit" value="cancel" class="btn btn-defult" (click)="cancel()">
+</form>

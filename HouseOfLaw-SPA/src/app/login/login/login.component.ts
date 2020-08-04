@@ -16,7 +16,11 @@ export class LoginComponent implements OnInit {
   login() {
     this.authServices.login(this.model).subscribe(
       (next) => {
-        this.router.navigate(['/home']);
+        if (localStorage.getItem('token')){
+          this.router.navigate(['/home']);
+        }else{
+          this.router.navigate(['/login']);
+        }
       },
       (error) => {
         console.log('فشل فى الدخول');

@@ -1,0 +1,11 @@
+form {
+    width: 350px;
+    margin: 100px auto;
+}
+form input {
+    margin-bottom: 20px;
+}
+form h4 {
+    color: #777;
+    text-align: center;
+}
