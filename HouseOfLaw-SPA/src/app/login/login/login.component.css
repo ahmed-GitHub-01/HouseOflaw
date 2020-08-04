@@ -1,0 +1,14 @@
+form {
+    width: 300px;
+    margin: 200px auto;
+}
+form input {
+    margin-bottom: 20px;
+    
+}
+form input[type="number"], input[type="password"]{
+    background-color: #eee;
+}
+form h4 {
+    color: #777;
+}

@@ -1,0 +1,6 @@
+<form class="login" (ngSubmit)="login()" #FormLogin="ngForm">
+    <h4 class="text-center">House Of law</h4>
+    <input class="form-control input-lg" required="required" type='number' [(ngModel)]="model.Code" name="user" placeholder="User Name" autocomplete="off"/>
+    <input class="form-control input-lg" required="required" type='password' [(ngModel)]="model.Password" name="pass" placeholder="Password" autocomplete="new-password"/>
+    <input class="btn input-lg btn-primary btn-block" [disabled]="!FormLogin.valid" type="submit" value="login"/>
+  </form>
