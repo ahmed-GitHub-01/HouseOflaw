@@ -19,4 +19,9 @@ export class AuthService {
       })
     );
   }
+  // tslint:disable-next-line: typedef
+  regiSter(model: any)
+  {
+    return this.http.post(this.baseUrl + 'paraaregistrey', model);
+  }
 }
