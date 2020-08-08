@@ -1,15 +1,21 @@
+import { MyProfileComponent } from './Body/home/my-profile/my-profile.component';
+import { appRoutes } from './routes';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { RegisterComponent } from './login/register/register.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './nav/navbar/navbar.component';
 import { LoginComponent } from './login/login/login.component';
 import { HomeComponent } from './Body/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { AuthService } from './_services/auth.service';
-import { HttpClientModule  } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -17,15 +23,19 @@ import { HttpClientModule  } from '@angular/common/http';
     NavbarComponent,
     LoginComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    MyProfileComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule,
+    BsDropdownModule.forRoot(),
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [AuthService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
