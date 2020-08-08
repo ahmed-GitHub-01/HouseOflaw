@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
+  username = localStorage.getItem('user');
   constructor(private router: Router, private toastr: ToastrService) {}
 
   ngOnInit(): void {}
@@ -15,6 +16,7 @@ export class NavbarComponent implements OnInit {
   logout() {
     localStorage.removeItem('token');
     this.router.navigate(['/login']);
+    this.username = 'Other';
     this.toastr.info('تم تسجيل الخروج بنجاح', 'تأكيد', { timeOut: 1500 });
   }
 }

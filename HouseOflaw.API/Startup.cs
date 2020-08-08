@@ -32,6 +32,7 @@ namespace HouseOflaw.API
             services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("HouseOflaw")));
             services.AddCors();
             services.AddScoped<IAuthRepo, AuthRepo>();
+            services.AddScoped<IDatingRepo, DatingRepo>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
             {
                 options.TokenValidationParameters = new TokenValidationParameters

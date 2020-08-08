@@ -8,14 +8,16 @@ import { JwtHelperService } from '@auth0/angular-jwt';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
+  username = '';
   title = 'HouseOfLaw';
   jwtHelper = new JwtHelperService();
   constructor(private authSerices: AuthService) {}
   // tslint:disable-next-line: typedef
-  ngOnInit(){
+  ngOnInit() {
     const token = localStorage.getItem('token');
-    if (token){
-      this.authSerices.decodedToken  = this.jwtHelper.decodeToken(token);
+    if (token) {
+      this.authSerices.decodedToken = this.jwtHelper.decodeToken(token);
+      this.username = localStorage.getItem('user');
     }
   }
 }

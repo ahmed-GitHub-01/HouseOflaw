@@ -4,14 +4,16 @@ using HouseOflaw.API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HouseOflaw.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20200808140711_extendedUserClass")]
+    partial class extendedUserClass
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -26,11 +28,11 @@ namespace HouseOflaw.API.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<double>("Code")
+                        .HasColumnType("float");
+
                     b.Property<string>("Url")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("UserCode")
-                        .HasColumnType("float");
 
                     b.Property<int?>("UserID")
                         .HasColumnType("int");
@@ -92,7 +94,7 @@ namespace HouseOflaw.API.Migrations
 
             modelBuilder.Entity("HouseOflaw.API.Models.Photo", b =>
                 {
-                    b.HasOne("HouseOflaw.API.Models.User", "User")
+                    b.HasOne("HouseOflaw.API.Models.User", null)
                         .WithMany("Photos")
                         .HasForeignKey("UserID");
                 });

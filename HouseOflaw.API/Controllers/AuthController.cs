@@ -1,3 +1,4 @@
+using System.Dynamic;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using HouseOflaw.API.Data;
@@ -57,7 +58,8 @@ namespace HouseOflaw.API.Controller
             if (userFromRepo == null) { return Unauthorized(); }
             var claims = new[] {
                 new Claim(ClaimTypes.NameIdentifier,userFromRepo.ID.ToString()),
-                new Claim(ClaimTypes.Name,userFromRepo.Code.ToString())
+                new Claim(ClaimTypes.Name,userFromRepo.Code.ToString()),
+                new Claim(ClaimTypes.Name,userFromRepo.UserName)
             };
             var key = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_config.GetSection("AppSettings:Token").Value));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
@@ -69,9 +71,11 @@ namespace HouseOflaw.API.Controller
             };
             var tokenHandler = new JwtSecurityTokenHandler();
             var token = tokenHandler.CreateToken(tokenDescriptor);
+            var user = userFromRepo.UserName.ToString();
             return Ok(new
             {
-                token = tokenHandler.WriteToken(token)
+                token = tokenHandler.WriteToken(token),
+                user
             });
         }
     }

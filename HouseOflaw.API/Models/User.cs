@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace HouseOflaw.API.Models
 {
@@ -17,5 +18,6 @@ namespace HouseOflaw.API.Models
         public int Switch { get; set; }
         public string Response { get; set; }
         public double Acc_Code { get; set; }
+        public ICollection<Photo> Photos { get; set; }
     }
 }

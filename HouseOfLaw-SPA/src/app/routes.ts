@@ -6,9 +6,16 @@ import { LoginComponent } from './login/login/login.component';
 import { HomeComponent } from './Body/home/home.component';
 import { Routes } from '@angular/router';
 export const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent , canActivate: [AuthGuard] },
-  { path: 'profile', component: MyProfileComponent, canActivate: [AuthGuard] },
-  { path: '**', redirectTo: 'home', pathMatch: 'full' },
+  {
+    path: '',
+    runGuardsAndResolvers: 'always',
+    canActivate: [AuthGuard],
+    children: [
+      { path: 'register', component: RegisterComponent },
+      { path: 'profile', component: MyProfileComponent },
+    ],
+  },
+  { path: '', redirectTo: '', pathMatch: 'full' },
 ];
