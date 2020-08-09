@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "hI8ym+4lunBNrAAdvJecapWQtzqIy5cl7WxY8Y3Ea5anOaBGfFc5gVqVle0DA6aKDUpFEdeS4VhZHtTQmW6HDA==",
+  "dgSpecHash": "dSwZACU2255o/EKBDQqYiHt2dvWadG86dGd1zUCl+42Z0FGAsxJnpco1lMTOJTUsRoHDw9vwJeOHursEwbspuQ==",
   "success": true,
   "projectFilePath": "D:\\pdf_house_of_law\\HouseOflaw\\HouseOflaw.API\\HouseOflaw.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\a.abdelmawla\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\a.abdelmawla\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
     "C:\\Users\\a.abdelmawla\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.6\\microsoft.aspnetcore.authentication.jwtbearer.3.1.6.nupkg.sha512",
     "C:\\Users\\a.abdelmawla\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\a.abdelmawla\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
@@ -70,7 +72,7 @@
     "C:\\Users\\a.abdelmawla\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\a.abdelmawla\\.nuget\\packages\\system.private.datacontractserialization\\4.3.0\\system.private.datacontractserialization.4.3.0.nupkg.sha512",
     "C:\\Users\\a.abdelmawla\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
-    "C:\\Users\\a.abdelmawla\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\a.abdelmawla\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\a.abdelmawla\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "C:\\Users\\a.abdelmawla\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
     "C:\\Users\\a.abdelmawla\\.nuget\\packages\\system.reflection.extensions\\4.3.0\\system.reflection.extensions.4.3.0.nupkg.sha512",

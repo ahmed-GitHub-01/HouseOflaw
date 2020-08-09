@@ -14,12 +14,12 @@ namespace HouseOflaw.API.Data
         }
         public void Add<T>(T entity) where T : class
         {
-           _context.Add(entity);
+            _context.Add(entity);
         }
 
         public void Delete<T>(T entity) where T : class
         {
-             _context.Remove(entity);
+            _context.Remove(entity);
         }
 
         public async Task<User> GetUser(double Code)

@@ -16,6 +16,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using System.Text;
+using AutoMapper;
 
 namespace HouseOflaw.API
 {
@@ -31,6 +32,7 @@ namespace HouseOflaw.API
             services.AddControllers();
             services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("HouseOflaw")));
             services.AddCors();
+            services.AddAutoMapper(typeof(DatingRepo).Assembly);
             services.AddScoped<IAuthRepo, AuthRepo>();
             services.AddScoped<IDatingRepo, DatingRepo>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>

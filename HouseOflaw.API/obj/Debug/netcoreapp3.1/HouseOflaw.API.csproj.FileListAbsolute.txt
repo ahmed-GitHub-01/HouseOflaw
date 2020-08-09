@@ -122,3 +122,5 @@ D:\pdf_house_of_law\HouseOflaw\HouseOflaw.API\obj\Debug\netcoreapp3.1\staticweba
 D:\pdf_house_of_law\HouseOflaw\HouseOflaw.API\obj\Debug\netcoreapp3.1\HouseOflaw.API.dll
 D:\pdf_house_of_law\HouseOflaw\HouseOflaw.API\obj\Debug\netcoreapp3.1\HouseOflaw.API.pdb
 D:\pdf_house_of_law\HouseOflaw\HouseOflaw.API\obj\Debug\netcoreapp3.1\HouseOflaw.API.genruntimeconfig.cache
+D:\pdf_house_of_law\HouseOflaw\HouseOflaw.API\bin\Debug\netcoreapp3.1\AutoMapper.dll
+D:\pdf_house_of_law\HouseOflaw\HouseOflaw.API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
