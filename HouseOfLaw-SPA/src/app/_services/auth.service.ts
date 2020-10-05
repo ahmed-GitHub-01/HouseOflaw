@@ -28,7 +28,7 @@ export class AuthService {
   }
   // tslint:disable-next-line: typedef
   regiSter(model: any) {
-    return this.http.post(this.baseUrl + 'paraaregistrey', model);
+    return this.http.post(this.baseUrl + 'registrey', model);
   }
   // tslint:disable-next-line: typedef
   loggedIn() {

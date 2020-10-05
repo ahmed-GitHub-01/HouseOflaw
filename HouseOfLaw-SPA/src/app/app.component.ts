@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   title = 'HouseOfLaw';
   jwtHelper = new JwtHelperService();
   constructor(private authSerices: AuthService) {}
-  // tslint:disable-next-line: typedef
+    // tslint:disable-next-line: typedef
   ngOnInit() {
     const token = localStorage.getItem('token');
     if (token) {

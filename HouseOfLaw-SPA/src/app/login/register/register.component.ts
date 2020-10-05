@@ -26,7 +26,7 @@ export class RegisterComponent implements OnInit {
   register() {
     this.authService.regiSter(this.model).subscribe(
       () => {
-        this.toastr.success('Hello world!', 'Toastr fun!');
+        this.toastr.success('Hello worldddddd!', 'Toastr fun!');
       },
       (error) => {
         this.toastr.error('Hello world!', 'Toastr fun!');

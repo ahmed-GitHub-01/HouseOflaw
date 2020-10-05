@@ -27,7 +27,7 @@ namespace HouseOflaw.API.Controller
             _repo = repo;
             _config = config;
         }
-        [HttpPost("paraaregistrey")]
+        [HttpPost("registrey")]
         public async Task<IActionResult> Registrey(UserForRegisterDto userForRegister)
         {
             if (await _repo.UserExists(userForRegister.Code))

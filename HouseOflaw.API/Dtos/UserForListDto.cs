@@ -14,6 +14,5 @@ namespace HouseOflaw.API.Dtos
         public DateTime DateEntry { get; set; }
         public string Department { get; set; }
         public string PhotoUrl { get; set; }
-        public ICollection<Photo> UrlPhoto { get; set; }
     }
 }
