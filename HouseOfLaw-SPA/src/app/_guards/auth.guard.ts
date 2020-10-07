@@ -2,7 +2,6 @@ import { ToastrService } from 'ngx-toastr';
 import { AuthService } from './../_services/auth.service';
 import { Injectable, EventEmitter } from '@angular/core';
 import { CanActivate, Router } from '@angular/router';
-import { timeout } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\pdf_house_of_law\\HouseOflaw\\HouseOflaw.API\\HouseOflaw.API.csproj": {}
+    "E:\\pdf_house_of_law\\HouseOflaw\\houseoflaw.api\\HouseOflaw.API.csproj": {}
   },
   "projects": {
-    "E:\\pdf_house_of_law\\HouseOflaw\\HouseOflaw.API\\HouseOflaw.API.csproj": {
+    "E:\\pdf_house_of_law\\HouseOflaw\\houseoflaw.api\\HouseOflaw.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\pdf_house_of_law\\HouseOflaw\\HouseOflaw.API\\HouseOflaw.API.csproj",
+        "projectUniqueName": "E:\\pdf_house_of_law\\HouseOflaw\\houseoflaw.api\\HouseOflaw.API.csproj",
         "projectName": "HouseOflaw.API",
-        "projectPath": "E:\\pdf_house_of_law\\HouseOflaw\\HouseOflaw.API\\HouseOflaw.API.csproj",
+        "projectPath": "E:\\pdf_house_of_law\\HouseOflaw\\houseoflaw.api\\HouseOflaw.API.csproj",
         "packagesPath": "C:\\Users\\a.abdelmawla\\.nuget\\packages\\",
-        "outputPath": "E:\\pdf_house_of_law\\HouseOflaw\\HouseOflaw.API\\obj\\",
+        "outputPath": "E:\\pdf_house_of_law\\HouseOflaw\\houseoflaw.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a.abdelmawla\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -4,14 +4,16 @@ using HouseOflaw.API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HouseOflaw.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20201005151808_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,26 +42,6 @@ namespace HouseOflaw.API.Migrations
                     b.HasIndex("UserID");
 
                     b.ToTable("Photos");
-                });
-
-            modelBuilder.Entity("HouseOflaw.API.Models.Roule", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int?>("UserID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("registry")
-                        .HasColumnType("int");
-
-                    b.HasKey("id");
-
-                    b.HasIndex("UserID");
-
-                    b.ToTable("Roule");
                 });
 
             modelBuilder.Entity("HouseOflaw.API.Models.User", b =>
@@ -114,13 +96,6 @@ namespace HouseOflaw.API.Migrations
                 {
                     b.HasOne("HouseOflaw.API.Models.User", "User")
                         .WithMany("Photos")
-                        .HasForeignKey("UserID");
-                });
-
-            modelBuilder.Entity("HouseOflaw.API.Models.Roule", b =>
-                {
-                    b.HasOne("HouseOflaw.API.Models.User", "User")
-                        .WithMany("Roules")
                         .HasForeignKey("UserID");
                 });
 #pragma warning restore 612, 618

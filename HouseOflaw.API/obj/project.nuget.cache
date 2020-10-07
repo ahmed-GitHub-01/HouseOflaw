@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jw9sfpzLaKfCD8o49L1tR7kSedFEHwyniBTjLkOE955BKnhXSj0sXYn2N01X/P47mUjBXM7V9VKr4xBC0F1D1A==",
+  "dgSpecHash": "XgalxIDmrSQeRGwKZbBVcHudj6N1Aj6aBihS0IAN7KO3z6Piw58PmYa52R/XNoNMrYCxMlRI77MdrJnyyf2hKA==",
   "success": true,
-  "projectFilePath": "E:\\pdf_house_of_law\\HouseOflaw\\HouseOflaw.API\\HouseOflaw.API.csproj",
+  "projectFilePath": "E:\\pdf_house_of_law\\HouseOflaw\\houseoflaw.api\\HouseOflaw.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\a.abdelmawla\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\a.abdelmawla\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
